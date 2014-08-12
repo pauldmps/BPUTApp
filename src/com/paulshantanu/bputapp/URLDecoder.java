@@ -17,7 +17,6 @@ package com.paulshantanu.bputapp;
 public class URLDecoder {
 
 	private static StringBuilder url;
-	public static final int INVALIDFILE = -1;
 	public static final int HTMLFILE =0;
 	public static final int PDFFILE =1;
 		
@@ -48,18 +47,15 @@ public class URLDecoder {
 	
 	public static int getUrlType(String url) {
 		
-		if(url.endsWith("htm")||url.endsWith("html"))
-		{
-			return HTMLFILE;
-		}
-		else if(url.endsWith("pdf"))
+		if(url.endsWith("pdf"))
 		{
 			return PDFFILE;
 		}
-		else
+		else 
 		{
-			return INVALIDFILE;
+			return HTMLFILE;
 		}
+	
 		
 	}
 	

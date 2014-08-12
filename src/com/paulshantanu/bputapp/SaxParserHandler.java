@@ -11,7 +11,7 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SaxParserHandler extends DefaultHandler {
 	int i = 0;
 	String temp_str;
-	Notice notice_obj;
+	private Notice notice_obj;
 	
 	public Notice getNotice() {
 		return notice_obj;

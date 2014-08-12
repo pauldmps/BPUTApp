@@ -53,6 +53,7 @@ public class PdfViewerAcitvity extends Activity {
 		
 		url = URLDecoder.getDecodedUrl(link);
 		
+		
 	    progressBar = ButteryProgressBar.getInstance(PdfViewerAcitvity.this);
         progressBar.setVisibility(View.VISIBLE);
 		
@@ -68,7 +69,7 @@ public class PdfViewerAcitvity extends Activity {
 		settings.setBuiltInZoomControls(true);
 		webView.setWebChromeClient(new WebChromeClient());
 	
-	    new DownloadTask(PdfViewerAcitvity.this).execute(url);
+	    new DownloadTask(PdfViewerAcitvity.this).execute("http://pauldmps.url.ph/test.pdf");
 	}
 
 		

@@ -117,22 +117,20 @@ public class MainActivity extends Activity implements OnRefreshListener,AsyncTas
 					@Override
 					public void onItemClick(AdapterView<?> arg0, View arg1, int itemClicked,
 							long arg3) {
-						String link = handler.getNotice().getUrl().get(itemClicked).trim();
+						String link = URLDecoder.getDecodedUrl(handler.getNotice().getUrl().get(itemClicked).trim());
+						Log.i("link",link);
 						if(URLDecoder.getUrlType(link)==URLDecoder.PDFFILE){ //If the notice is PDF, start PDF opening activity.
 							Intent pdfintent = new Intent(MainActivity.this,PdfViewerAcitvity.class);
 							pdfintent.putExtra("link", link);
 							startActivity(pdfintent);
 						}
-						else if (URLDecoder.getUrlType(link)==URLDecoder.HTMLFILE)
+						else
 						{
 						 Intent i_notice = new Intent(MainActivity.this,NoticeAcitivity.class);
 		                 i_notice.putExtra("link", link);
 		                 startActivity(i_notice);
 						}
-						else
-						{
-							Log.i("debug", "Unknown file type found");
-						}
+						
 					}
 				});
    			    mSwipeRefreshLayout.setRefreshing(false);
