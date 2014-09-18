@@ -13,6 +13,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -69,7 +70,7 @@ public class PdfViewerAcitvity extends Activity {
 		settings.setBuiltInZoomControls(true);
 		webView.setWebChromeClient(new WebChromeClient());
 	
-	    new DownloadTask(PdfViewerAcitvity.this).execute("http://pauldmps.url.ph/test.pdf");
+	    new DownloadTask(PdfViewerAcitvity.this).execute(url);
 	}
 
 		
@@ -200,7 +201,7 @@ public class PdfViewerAcitvity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
     	super.onCreateOptionsMenu(menu);
     	MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main, menu);
+        inflater.inflate(R.menu.pdfmenu, menu);
         return true;
     }
     
@@ -227,6 +228,21 @@ public class PdfViewerAcitvity extends Activity {
 		case android.R.id.home:
 			 NavUtils.navigateUpFromSameTask(this);
 		        return true;
+		        
+        case R.id.action_next:
+			
+
+			webView.loadUrl("javascript:onNextPage()");
+	    	return super.onOptionsItemSelected(item);
+			
+		
+		case R.id.action_previous:
+			
+			
+			webView.loadUrl("javascript:onPrevPage()");
+	    	return super.onOptionsItemSelected(item);
+
+			        
 
 		default:
 	    	return super.onOptionsItemSelected(item);

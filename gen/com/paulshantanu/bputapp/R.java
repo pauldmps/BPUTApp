@@ -150,60 +150,64 @@ public final class R {
         public static final int btn_cab_done_pressed_paulshantanu=0x7f020009;
         public static final int cab_background_bottom_paulshantanu=0x7f02000a;
         public static final int cab_background_top_paulshantanu=0x7f02000b;
-        public static final int ic_launcher=0x7f02000c;
-        public static final int list_focused_paulshantanu=0x7f02000d;
-        public static final int list_pressed_paulshantanu=0x7f02000e;
-        public static final int menu_dropdown_panel_paulshantanu=0x7f02000f;
-        public static final int notification_item_background_color=0x7f020025;
-        public static final int notification_item_background_color_pressed=0x7f020026;
-        public static final int notification_template_icon_bg=0x7f02002e;
-        public static final int notification_template_icon_low_bg=0x7f02002f;
-        public static final int progress_bg_paulshantanu=0x7f020010;
-        public static final int progress_horizontal_paulshantanu=0x7f020011;
-        public static final int progress_primary_paulshantanu=0x7f020012;
-        public static final int progress_secondary_paulshantanu=0x7f020013;
-        public static final int safe_mode_background=0x7f020028;
-        public static final int screen_background_dark=0x7f020022;
+        public static final int ic_action_next_item=0x7f02000c;
+        public static final int ic_action_previous_item=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int list_focused_paulshantanu=0x7f02000f;
+        public static final int list_pressed_paulshantanu=0x7f020010;
+        public static final int menu_dropdown_panel_paulshantanu=0x7f020011;
+        public static final int notification_item_background_color=0x7f020027;
+        public static final int notification_item_background_color_pressed=0x7f020028;
+        public static final int notification_template_icon_bg=0x7f020030;
+        public static final int notification_template_icon_low_bg=0x7f020031;
+        public static final int progress_bg_paulshantanu=0x7f020012;
+        public static final int progress_horizontal_paulshantanu=0x7f020013;
+        public static final int progress_primary_paulshantanu=0x7f020014;
+        public static final int progress_secondary_paulshantanu=0x7f020015;
+        public static final int safe_mode_background=0x7f02002a;
+        public static final int screen_background_dark=0x7f020024;
         /**  Background drawable that can be used for a transparent activity to
          be able to display a dark UI: this darkens its background to make
          a dark (default theme) UI more visible. 
          */
-        public static final int screen_background_dark_transparent=0x7f020029;
-        public static final int screen_background_holo_dark=0x7f02002d;
+        public static final int screen_background_dark_transparent=0x7f02002b;
+        public static final int screen_background_holo_dark=0x7f02002f;
         /**  For holo theme 
          */
-        public static final int screen_background_holo_light=0x7f02002c;
-        public static final int screen_background_light=0x7f020021;
+        public static final int screen_background_holo_light=0x7f02002e;
+        public static final int screen_background_light=0x7f020023;
         /**  Background drawable that can be used for a transparent activity to
          be able to display a light UI: this lightens its background to make
          a light UI more visible. 
          */
-        public static final int screen_background_light_transparent=0x7f02002a;
-        public static final int search_bar_default_color=0x7f020027;
-        public static final int selectable_background_paulshantanu=0x7f020014;
+        public static final int screen_background_light_transparent=0x7f02002c;
+        public static final int search_bar_default_color=0x7f020029;
+        public static final int selectable_background_paulshantanu=0x7f020016;
         /**  For date picker widget 
          */
-        public static final int selected_day_background=0x7f02002b;
-        public static final int spinner_ab_default_paulshantanu=0x7f020015;
-        public static final int spinner_ab_disabled_paulshantanu=0x7f020016;
-        public static final int spinner_ab_focused_paulshantanu=0x7f020017;
-        public static final int spinner_ab_pressed_paulshantanu=0x7f020018;
-        public static final int spinner_background_ab_paulshantanu=0x7f020019;
-        public static final int status_bar_closed_default_background=0x7f020023;
-        public static final int status_bar_opened_default_background=0x7f020024;
-        public static final int tab_indicator_ab_paulshantanu=0x7f02001a;
-        public static final int tab_selected_focused_paulshantanu=0x7f02001b;
-        public static final int tab_selected_paulshantanu=0x7f02001c;
-        public static final int tab_selected_pressed_paulshantanu=0x7f02001d;
-        public static final int tab_unselected_focused_paulshantanu=0x7f02001e;
-        public static final int tab_unselected_paulshantanu=0x7f02001f;
-        public static final int tab_unselected_pressed_paulshantanu=0x7f020020;
+        public static final int selected_day_background=0x7f02002d;
+        public static final int spinner_ab_default_paulshantanu=0x7f020017;
+        public static final int spinner_ab_disabled_paulshantanu=0x7f020018;
+        public static final int spinner_ab_focused_paulshantanu=0x7f020019;
+        public static final int spinner_ab_pressed_paulshantanu=0x7f02001a;
+        public static final int spinner_background_ab_paulshantanu=0x7f02001b;
+        public static final int status_bar_closed_default_background=0x7f020025;
+        public static final int status_bar_opened_default_background=0x7f020026;
+        public static final int tab_indicator_ab_paulshantanu=0x7f02001c;
+        public static final int tab_selected_focused_paulshantanu=0x7f02001d;
+        public static final int tab_selected_paulshantanu=0x7f02001e;
+        public static final int tab_selected_pressed_paulshantanu=0x7f02001f;
+        public static final int tab_unselected_focused_paulshantanu=0x7f020020;
+        public static final int tab_unselected_paulshantanu=0x7f020021;
+        public static final int tab_unselected_pressed_paulshantanu=0x7f020022;
     }
     public static final class id {
         public static final int HorizontalScrollView1=0x7f090007;
         public static final int LinearLayout1=0x7f090000;
         public static final int RelativeLayout1=0x7f090004;
         public static final int about=0x7f09000b;
+        public static final int action_next=0x7f09000d;
+        public static final int action_previous=0x7f09000c;
         public static final int action_settings=0x7f09000a;
         public static final int lv_notices_main=0x7f090003;
         public static final int notice_table=0x7f090008;
@@ -220,6 +224,7 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int pdfmenu=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
